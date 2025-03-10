@@ -1,11 +1,17 @@
+
 function insert_Row() {
-    //Write your code here
-	var table = document.getElementById("sampleTable");
-  var row = table.insertRow(0);
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
-  cell1.innerHTML = "NEW CELL1";
-  cell2.innerHTML = "NEW CELL2";
-  
-  
+    // Get the table by ID
+    let table = document.getElementById("sampleTable");
+
+    // Create a new row at the first position (index 0)
+    let newRow = table.insertRow(0);
+
+    // Insert two new cells into the row
+    let cell1 = newRow.insertCell(0);
+    let cell2 = newRow.insertCell(1);
+
+    // Assign values to the new cells
+    cell1.innerHTML = "New Cell1";
+    cell2.innerHTML = "New Cell2";
 }
+
